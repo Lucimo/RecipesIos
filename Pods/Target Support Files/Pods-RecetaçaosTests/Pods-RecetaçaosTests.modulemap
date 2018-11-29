@@ -1,0 +1,6 @@
+framework module Pods_Recetac_aosTests {
+  umbrella header "Pods-RecetaçaosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
