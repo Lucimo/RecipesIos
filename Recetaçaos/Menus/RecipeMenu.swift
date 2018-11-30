@@ -16,6 +16,7 @@ class RecipeMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 registerRecipesCells()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -26,9 +27,9 @@ registerRecipesCells()
     internal var recipes: [Recipes] = []
     internal var categoryLabels: [CategoryLabels] = []
     internal var currentindex = 0
-    convenience init(categoryLabels: [CategoryLabels]){
+    convenience init(recipes: [Recipes]){
         self.init()
-        self.categoryLabels = categoryLabels
+        self.recipes = recipes
     }
     private func registerRecipesCells(){
         let identifier = "RecipesCells"
@@ -59,7 +60,7 @@ extension RecipeMenu: UITableViewDelegate, UITableViewDataSource{
         
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "RECIPES"
+        return "RECIPES                                                 DIFFICULTY"
     }
     
     func  tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

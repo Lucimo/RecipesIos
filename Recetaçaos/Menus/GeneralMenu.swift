@@ -86,27 +86,22 @@ extension GeneralMenu: UITableViewDelegate, UITableViewDataSource{
         
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-       return "CATEGORIES"
+       return "CATEGORIES                                           NUMBER"
     }
     
     func  tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        
         return 120.0
-        
     }
     func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-     
-        let categoryLabels = RecipeMenu()
-        navigationController?.pushViewController(categoryLabels, animated: true)
+        let myCategory = categoryLabels[indexPath.row]
+        let recipeVC = RecipeMenu(recipes: myCategory.recipes)
+        navigationController?.pushViewController(recipeVC, animated: true)
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-            let cell: CategoryCells = (tableView.dequeueReusableCell(withIdentifier: "CategoryCells", for: indexPath) as? CategoryCells)!
-            let cellRow = categoryLabels[indexPath.row]
+        let cell: CategoryCells = (tableView.dequeueReusableCell(withIdentifier: "CategoryCells", for: indexPath) as? CategoryCells)!
+        let cellRow = categoryLabels[indexPath.row]
         cell.categoryImg?.image = UIImage(named: cellRow.foodAvatar!)
         cell.catLbl?.text = cellRow.titleCat
         cell.numLbl?.text = cellRow.titleNum

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		335A7CBC21B13DD100D119A0 /* DetailsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335A7CBA21B13DD100D119A0 /* DetailsMenu.swift */; };
+		335A7CBD21B13DD100D119A0 /* DetailsMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335A7CBB21B13DD100D119A0 /* DetailsMenu.xib */; };
 		33A276BE21AEA64900E1C32E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A276BD21AEA64900E1C32E /* AppDelegate.swift */; };
 		33A276C521AEA64B00E1C32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A276C421AEA64B00E1C32E /* Assets.xcassets */; };
 		33A276C821AEA64B00E1C32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A276C621AEA64B00E1C32E /* LaunchScreen.storyboard */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		0A501C8F66FE6679F2CA795F /* Pods_Recetac_aos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recetac_aos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6BE52C5C0EAF4F25708B7F /* Pods_Recetac_aosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recetac_aosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		335A7CBA21B13DD100D119A0 /* DetailsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMenu.swift; sourceTree = "<group>"; };
+		335A7CBB21B13DD100D119A0 /* DetailsMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMenu.xib; sourceTree = "<group>"; };
 		33A276BA21AEA64900E1C32E /* Recetaçaos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recetaçaos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A276BD21AEA64900E1C32E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33A276C421AEA64B00E1C32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				33A276F021AEAEE800E1C32E /* GeneralMenu.xib */,
 				33B42C5821B0481D00634BDB /* RecipeMenu.swift */,
 				33B42C5921B0481D00634BDB /* RecipeMenu.xib */,
+				335A7CBA21B13DD100D119A0 /* DetailsMenu.swift */,
+				335A7CBB21B13DD100D119A0 /* DetailsMenu.xib */,
 			);
 			path = Menus;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				TargetAttributes = {
 					33A276B921AEA64900E1C32E = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					33A276CD21AEA64B00E1C32E = {
 						CreatedOnToolsVersion = 9.3;
@@ -333,6 +340,7 @@
 				33B42C6921B0814000634BDB /* RecipesCells.xib in Resources */,
 				33B42C5B21B0481D00634BDB /* RecipeMenu.xib in Resources */,
 				33A276F221AEAEE800E1C32E /* GeneralMenu.xib in Resources */,
+				335A7CBD21B13DD100D119A0 /* DetailsMenu.xib in Resources */,
 				33A276C521AEA64B00E1C32E /* Assets.xcassets in Resources */,
 				33A276F621AEB14100E1C32E /* CategoryCells.xib in Resources */,
 			);
@@ -441,6 +449,7 @@
 				33A276F521AEB14100E1C32E /* CategoryCells.swift in Sources */,
 				33B42C6821B0814000634BDB /* RecipesCells.swift in Sources */,
 				33A276F121AEAEE800E1C32E /* GeneralMenu.swift in Sources */,
+				335A7CBC21B13DD100D119A0 /* DetailsMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +615,7 @@
 			baseConfigurationReference = 3ADE83CB4A4AA440A08214BE /* Pods-Recetaçaos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Recetaçaos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -614,6 +624,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "lmao.Recetac-aos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -624,6 +635,7 @@
 			baseConfigurationReference = A295A8860710E65144742276 /* Pods-Recetaçaos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Recetaçaos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
