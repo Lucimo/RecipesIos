@@ -14,14 +14,16 @@ class Recipes{
     var recipesDesc: String?
     var recipesIngredients: String?
     var recipesSteps: String?
+    var recipesTime: String?
     
     
-    init(recipesAvatar: String?, recipesName: String? ,recipesDifficulty: String?,recipesDesc: String?,  recipesIngredients: String?, recipesSteps: String? ) {
+    init(recipesAvatar: String?, recipesName: String? ,recipesDifficulty: String?,recipesDesc: String?,  recipesIngredients: String?, recipesSteps: String?, recipesTime: String?) {
         self.recipesAvatar = recipesAvatar
         self.recipesName = recipesName
         self.recipesDifficulty = recipesDifficulty
         self.recipesDesc = recipesDesc
         self.recipesIngredients = recipesIngredients
         self.recipesSteps = recipesSteps
+        self.recipesTime = recipesTime
     }
 }

@@ -18,6 +18,7 @@
                 <outlet property="ingredientsTV" destination="8nO-ue-AdO" id="31L-8h-a5e"/>
                 <outlet property="mapBtn" destination="Cef-gv-K11" id="YnG-V4-htJ"/>
                 <outlet property="stepsTV" destination="ELn-TD-bga" id="s3Y-sO-d5u"/>
+                <outlet property="timeLbl" destination="EUm-5j-Soe" id="zo1-CZ-58l"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -85,12 +86,20 @@
                     </constraints>
                     <state key="normal" title="Location"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUm-5j-Soe">
+                    <rect key="frame" x="264" y="48" width="95" height="59"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="8nO-ue-AdO" firstAttribute="top" secondItem="xFL-dg-PvS" secondAttribute="bottom" constant="36" id="047-fS-W9C"/>
                 <constraint firstItem="ELn-TD-bga" firstAttribute="top" secondItem="8nO-ue-AdO" secondAttribute="bottom" constant="51" id="1oC-K8-HUH"/>
                 <constraint firstItem="xFL-dg-PvS" firstAttribute="trailing" secondItem="8nO-ue-AdO" secondAttribute="trailing" id="1zE-Oe-IAQ"/>
+                <constraint firstItem="EUm-5j-Soe" firstAttribute="trailing" secondItem="xFL-dg-PvS" secondAttribute="trailing" id="3zm-jx-Rdg"/>
+                <constraint firstItem="xFL-dg-PvS" firstAttribute="top" secondItem="EUm-5j-Soe" secondAttribute="bottom" constant="84" id="6J0-si-Nsq"/>
                 <constraint firstItem="rSv-RN-KBg" firstAttribute="trailing" secondItem="YqA-gQ-Oz1" secondAttribute="trailing" id="9kp-yb-ZmF"/>
                 <constraint firstItem="TDV-E6-kwq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="A1u-Ek-OTc"/>
                 <constraint firstItem="rSv-RN-KBg" firstAttribute="top" secondItem="TDV-E6-kwq" secondAttribute="bottom" constant="8" symbolic="YES" id="Db1-6a-xup"/>
@@ -102,11 +111,13 @@
                 <constraint firstItem="YqA-gQ-Oz1" firstAttribute="trailing" secondItem="foy-OO-OtI" secondAttribute="trailing" id="VbC-bC-geL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rSv-RN-KBg" secondAttribute="trailing" constant="224" id="Yom-eG-Gx3"/>
                 <constraint firstItem="TDV-E6-kwq" firstAttribute="leading" secondItem="rSv-RN-KBg" secondAttribute="leading" id="Zqw-PY-lZ8"/>
+                <constraint firstItem="EUm-5j-Soe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="28" id="ak2-o6-guF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TDV-E6-kwq" secondAttribute="trailing" constant="119" id="bHB-Dg-NBb"/>
                 <constraint firstItem="Cef-gv-K11" firstAttribute="top" secondItem="ELn-TD-bga" secondAttribute="bottom" constant="56" id="cO3-hU-YRx"/>
                 <constraint firstItem="xFL-dg-PvS" firstAttribute="leading" secondItem="YqA-gQ-Oz1" secondAttribute="leading" id="d0p-gF-taY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Cef-gv-K11" secondAttribute="bottom" constant="72" id="f2S-9J-f1u"/>
                 <constraint firstItem="YqA-gQ-Oz1" firstAttribute="top" secondItem="rSv-RN-KBg" secondAttribute="bottom" constant="42" id="fuk-TK-H5n"/>
+                <constraint firstItem="EUm-5j-Soe" firstAttribute="leading" secondItem="TDV-E6-kwq" secondAttribute="trailing" constant="8" symbolic="YES" id="gq4-3c-9YS"/>
                 <constraint firstItem="ELn-TD-bga" firstAttribute="centerX" secondItem="Cef-gv-K11" secondAttribute="centerX" id="iuv-mO-P3y"/>
                 <constraint firstItem="YqA-gQ-Oz1" firstAttribute="leading" secondItem="8nO-ue-AdO" secondAttribute="leading" id="k5C-hS-B3Z"/>
                 <constraint firstItem="8nO-ue-AdO" firstAttribute="trailing" secondItem="ELn-TD-bga" secondAttribute="trailing" id="nKi-Fx-ddz"/>

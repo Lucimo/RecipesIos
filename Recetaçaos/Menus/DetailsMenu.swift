@@ -12,6 +12,7 @@ class DetailsMenu: UIViewController {
     
     internal var  recipes: Recipes?
 
+    @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var detailImg: UIImageView!
     @IBOutlet weak var descTV: UITextView!
     @IBOutlet weak var ingredientsTV: UITextView!
@@ -24,6 +25,7 @@ class DetailsMenu: UIViewController {
         descTV.text = recipes?.recipesDesc
         ingredientsTV.text = recipes?.recipesIngredients
         stepsTV.text = recipes?.recipesSteps
+        timeLbl.text = recipes?.recipesTime
         // Do any additional setup after loading the view.
     }
     
