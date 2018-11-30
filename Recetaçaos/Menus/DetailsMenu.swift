@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import SDWebImage
 class DetailsMenu: UIViewController {
-
+    
+    internal var  recipes: Recipes?
 
     @IBOutlet weak var detailImg: UIImageView!
     @IBOutlet weak var descTV: UITextView!
@@ -19,7 +20,16 @@ class DetailsMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapBtn.layer.cornerRadius = 5.8
+       detailImg?.sd_setImage(with: URL(string: recipes!.recipesAvatar! )!, completed: nil)
+        descTV.text = recipes?.recipesDesc
+        ingredientsTV.text = recipes?.recipesIngredients
+        stepsTV.text = recipes?.recipesSteps
         // Do any additional setup after loading the view.
+    }
+    
+    convenience init(recipes: Recipes){
+      self.init()
+        self.recipes = recipes
     }
 
     override func didReceiveMemoryWarning() {

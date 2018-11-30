@@ -25,7 +25,6 @@ registerRecipesCells()
         // Dispose of any resources that can be recreated.
     }
     internal var recipes: [Recipes] = []
-    internal var categoryLabels: [CategoryLabels] = []
     internal var currentindex = 0
     convenience init(recipes: [Recipes]){
         self.init()
@@ -70,8 +69,11 @@ extension RecipeMenu: UITableViewDelegate, UITableViewDataSource{
         
     }
     func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let myCategory = recipes[indexPath.row]
+        let detailVC = DetailsMenu(recipes: myCategory)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
+    
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -88,4 +90,5 @@ extension RecipeMenu: UITableViewDelegate, UITableViewDataSource{
         
     }
 }
+
 
