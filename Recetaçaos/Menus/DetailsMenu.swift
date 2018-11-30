@@ -19,7 +19,7 @@ class DetailsMenu: UIViewController {
     @IBOutlet weak var mapBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapBtn.layer.cornerRadius = 5.8
+        mapBtn.layer.cornerRadius = 20.8
        detailImg?.sd_setImage(with: URL(string: recipes!.recipesAvatar! )!, completed: nil)
         descTV.text = recipes?.recipesDesc
         ingredientsTV.text = recipes?.recipesIngredients
